@@ -1,0 +1,24 @@
+//13
+INSERT INTO movies VALUES (4, "Toy Story 4", "Here's Johnny", 2015, 90);
+
+INSERT INTO boxoffice VALUES (4, 8.7, 340000000, 270000000);
+
+//14
+UPDATE movies
+SET director = "John Lasseter"
+WHERE year = 1998;
+
+UPDATE movies
+SET year = 1999
+WHERE id = 3;
+
+UPDATE movies
+SET title = "Toy Story 3", director = "Lee Unkrich"
+WHERE title = "Toy Story 8";
+
+//15
+DELETE FROM movies
+WHERE year < 2005;
+
+DELETE FROM movies
+WHERE director = "Andrew Stanton";
